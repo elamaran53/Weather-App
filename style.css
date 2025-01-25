@@ -25,6 +25,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 
 }
 .search input{
@@ -38,6 +39,7 @@ body{
     flex: 1;
     margin-right: 16px;
     font-size: 1rem;
+    flex-wrap: wrap;
 }
 .search button{
     border: 0;
@@ -84,4 +86,55 @@ body{
 .humidity,.wind{
     font-size: 28px;
     margin-top: -6px;
+}
+.weather{
+    display: none;
+}
+.error{
+    text-align: left;
+    margin-left: 10px;
+    font-size: 14px;
+    margin-top: 10px;
+    color: red;
+    display: none;
+}
+
+@media (max-width:512) {
+    body{
+        width: 90%;
+        padding: 0;
+        margin: 0;
+        overflow-x: hidden;
+
+    }
+    .search input{
+        flex-wrap: wrap;
+        padding: 8px 20px;
+    }
+    .search button{
+        border: 0;
+        outline: 0;
+        background: #ebfffc;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+    }
+    .search button img{
+        width: 10px;
+    }
+    .details{
+        padding: 0px 15px;
+    }
+    
+.col img{
+    width: 25px;
+    margin-right: 10px;
+}
+.humidity,.wind{
+    font-size: 15px;
+    margin-top: -6px;
+}
+
+    
 }
